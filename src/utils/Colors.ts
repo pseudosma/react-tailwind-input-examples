@@ -15,7 +15,7 @@ export const getBackgroundColorClasses = (color: Color) => {
 
 export const getButtonColorClasses = (
   color: Color,
-  disabled: boolean
+  disabled?: boolean
 ): string => {
   switch (color) {
     case "primary":

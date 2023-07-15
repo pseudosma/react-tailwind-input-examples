@@ -40,7 +40,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.10"
+  },
   "keywords": [],
   "description": "forked from react-tailwind-starter"
 }

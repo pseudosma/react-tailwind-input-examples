@@ -1,4 +1,5 @@
 import { Color, getCheckboxColorClasses } from "../utils";
+import React from 'react';
 
 interface RadioProps
   extends Omit<
