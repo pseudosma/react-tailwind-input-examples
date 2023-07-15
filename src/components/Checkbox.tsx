@@ -20,6 +20,7 @@ export const Checkbox = (props: CheckboxProps) => {
         "h-4 w-4 focus:ring-transparent border-2 rounded " +
         getCheckboxColorClasses(color, coloredBorder, disabled)
       }
+      disabled={disabled}
       type="checkbox"
       {...otherProps}
     />

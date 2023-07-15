@@ -20,6 +20,7 @@ export const RadioButton = (props: RadioProps) => {
         "h-5 w-5 border-2 focus:ring-transparent " +
         getCheckboxColorClasses(color, coloredBorder, disabled)
       }
+      disabled={disabled}
       type="radio"
       {...otherProps}
     />
