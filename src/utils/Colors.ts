@@ -24,7 +24,7 @@ export const getButtonColorClasses = (
         " border-blue-500 " +
         (disabled
           ? ""
-          : "hover:bg-blue-600 focus:blue-600 hover:border-blue-600")
+          : "hover:bg-blue-600 focus:border-blue-600 hover:border-blue-600")
       );
     case "warning":
       return (
@@ -32,18 +32,18 @@ export const getButtonColorClasses = (
         " border-yellow-500 " +
         (disabled
           ? ""
-          : "hover:bg-yellow-600 focus:yellow-600 hover:border-yellow-600")
+          : "hover:bg-yellow-600 focus:border-yellow-600 hover:border-yellow-600")
       );
     case "danger":
       return (
         getBackgroundColorClasses(color) +
         " border-red-500 " +
-        (disabled ? "" : "hover:bg-red-600 focus:red-600 hover:border-red-600")
+        (disabled ? "" : "hover:bg-red-600 focus:border-red-600 hover:border-red-600")
       );
     case "success":
       return (
         getBackgroundColorClasses(color) +
-        " hover:bg-green-600 focus:green-600 border-green-500 hover:border-green-600"
+        " hover:bg-green-600 focus:border-green-600 border-green-500 hover:border-green-600"
       );
   }
 };
@@ -86,12 +86,12 @@ export const getCheckboxColorClasses = (
 export const getAccentColorClasses = (color: Color) => {
   switch (color) {
     case "primary":
-      return "input-accent-primary";
+      return "input-accent-primary focus:border-blue-600";
     case "warning":
-      return "input-accent-warning";
+      return "input-accent-warning focus:border-yellow-600";
     case "danger":
-      return "input-accent-danger";
+      return "input-accent-danger focus:border-red-600";
     case "success":
-      return "input-accent-success";
+      return "input-accent-success focus:border-green-600";
   }
 };

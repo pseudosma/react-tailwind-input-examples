@@ -21,7 +21,7 @@ export const RangeSlider = (props: RangeProps) => {
       className={
         (trackColor ? getBackgroundColorClasses(trackColor) : "bg-gray-400") +
         " " +
-        "primary-slider h-1 cursor-pointer rounded-lg input-accent-primary" // just in case the css overrides don't work, we include the correct accent color
+        "primary-slider h-1 cursor-pointer rounded-lg input-accent-primary appearance-none" // just in case the css overrides don't work, we include the correct accent color
       }
       {...otherProps}
     />

@@ -108,6 +108,7 @@ input[type="checkbox"]:checked:after {
 
 .primary-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: #4299e1;
   width: 15px;
